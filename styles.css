@@ -1,0 +1,113 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+body {
+    background-color:#000000;
+    animation: fadeIn ease-in 3s forwards;
+    opacity: 0;
+}
+
+@keyframes fadeIn {
+    from{
+        opacity:0;
+    }
+    to {
+        opacity:1;
+    }
+}
+
+nav {
+    width: 100%;
+    position: absolute;
+    top: 24%;
+    left: 60%;
+    padding: 20px 8%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    font-size:50px;
+    text-align: center;
+}
+
+a {
+    text-decoration: none;
+    display: block;
+    padding: 30px 16px;
+    background-image: linear-gradient(90deg, #CFD5D9, #363839, #131414);
+    background-clip: text;
+    color: transparent;
+    background-size:150%;
+    background-position: 0%;
+    animation: gradientLight 0.65s infinite ease-in-out alternate;
+    
+}         
+a:visited {
+    text-decoration: none;
+    background-image: linear-gradient(90deg, #CFD5D9, #363839, #131414);
+    background-clip: text;
+    color: transparent;
+    background-size:150%;
+    background-position: 0%;
+    animation: gradientLight 0.65s infinite ease-in-out alternate;
+    } 
+@keyframes gradientLight {
+    from{
+        background-position:0%;
+    }
+    to {
+        background-position:30%;
+    }
+}
+a:hover {color:#FFFFFF; text-decoration: none;}   
+a:active {color:#a5fefc; text-decoration: none;}  
+
+.eye-container {
+    position:absolute;
+    padding: 5px;
+    display: block;
+    top: 5%;
+    left:72.52%;
+    font-size:50px;
+    color:#e1e1e1;
+    text-align: center;
+    width: 200px;
+}
+.eye {
+    display: block;
+    padding: 2px;
+    animation: fadeIn ease-in 3s forwards;
+    opacity: 0;
+}
+.eye-dialogue {
+    display: block;
+    padding: 2px;
+    font-size:20px;
+    animation: fadeIn ease-in 3s forwards;
+    opacity: 0;
+}
+
+
+.bvideo {
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    z-index: -1;
+    animation: fadeIn ease-in 3s forwards;
+    opacity:0;
+}
+@media (min-aspect-ratio: 16/9) {
+    .bvideo {
+        width: 100%;
+        height: auto;
+    }
+}
+@media (max-aspect-ratio: 16/9) {
+    .bvideo {
+        width: auto;
+        height: 100%;
+    }
+}
