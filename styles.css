@@ -21,7 +21,7 @@ body {
 }
 
 nav {
-    width: 100%;
+    width: 650px;
     position: absolute;
     top: 24%;
     left: 60%;
@@ -36,7 +36,7 @@ nav {
 a {
     text-decoration: none;
     display: block;
-    padding: 30px 16px;
+    padding: 30px;
     background-image: linear-gradient(90deg, #CFD5D9, #363839, #131414);
     background-clip: text;
     color: transparent;
@@ -47,6 +47,7 @@ a {
 }         
 a:visited {
     text-decoration: none;
+    padding: 30px;
     background-image: linear-gradient(90deg, #CFD5D9, #363839, #131414);
     background-clip: text;
     color: transparent;
@@ -62,19 +63,19 @@ a:visited {
         background-position:30%;
     }
 }
-a:hover {color:#FFFFFF; text-decoration: none;}   
-a:active {color:#a5fefc; text-decoration: none;}  
+a:hover {color:#FFFFFF; text-decoration: none; padding: 30px;}   
+a:active {color:#a5fefc; text-decoration: none; padding: 30px;}  
 
 .eye-container {
     position:absolute;
     padding: 5px;
     display: block;
-    top: 5%;
-    left:72.52%;
+    top: 8%;
+    left:73.5%;
     font-size:50px;
     color:#e1e1e1;
-    text-align: center;
     width: 200px;
+    text-align: center;
 }
 .eye {
     display: block;
